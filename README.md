@@ -4,11 +4,11 @@
 
 
 
-# Project Name
+# yourl - a URL shortner
 Long Description about project. This project do that. This project is awesome...
 ## Team members
-1. [Name 1](https://github.com/TH-Activities/saturday-hack-night-template)
-2. [Name 2](https://github.com/TH-Activities/saturday-hack-night-template)
+1. [Alan Subash](https://github.com/ALAN20SIG)
+2. [Mishel Anna](https://github.com/MishelAnna)
 ## Link to product walkthrough
 [link to video](Link Here)
 ## How it Works ?
