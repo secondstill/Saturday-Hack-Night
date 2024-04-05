@@ -4,7 +4,7 @@
 
 
 
-# yourl - a URL shortner
+# Project Name
 Long Description about project. This project do that. This project is awesome...
 ## Team members
 1. [Alan Subhash](https://github.com/ALAN20SIG)
