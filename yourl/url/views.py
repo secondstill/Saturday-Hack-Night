@@ -1,6 +1,16 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render, redirect
+from .models import UrlData
+import random
+import string
 
+def yourl(request):
+    if request.method == 'POST':
+        original_url = request.POST.get('url')
+        slug = ''.join(random.choices(string.ascii_letters + string.digits, k=6))
+        new_url_data = UrlData.objects.create(url=original_url, slug=slug)
+        return render(request, 'shortened_url.html', {'shortened_url': new_url_data})
+    return render(request, 'yourl_form.html')
 
-def index(request):
-    return render(request, 'main.html')
+def urlRedirect(request, slug):
+    url_data = UrlData.objects.get(slug=slug)
+    return redirect(url_data.url)

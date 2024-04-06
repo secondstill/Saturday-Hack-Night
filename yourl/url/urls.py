@@ -1,6 +1,7 @@
 from django.urls import path
-from . import views
-app_name = "url"
+from .views import yourl, urlRedirect
+
 urlpatterns = [
-    path("", views.index, name="home")
+    path('', yourl, name='yourl'),
+    path('<slug:slug>/', urlRedirect, name='urlRedirect'),
 ]
