@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shortened URL</title>
 </head>
-<body>
-    <p>Shortened URL: <a href="{% url 'urlRedirect' shortened_url.slug %}">{{ request.build_absolute_uri }}{{ shortened_url.slug }}</a></p>
+<body style="background-color: #f4f4f4; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+    <div style="text-align: center; padding: 20px; background-color: #fff; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <h1 style="color: #333;">Shortened URL</h1>
+        <p style="margin-bottom: 20px;">Click the link below to access your shortened URL:</p>
+        <p><a href="{% url 'urlRedirect' shortened_url.slug %}" style="color: #007bff; text-decoration: none; font-weight: bold;">{{ request.build_absolute_uri }}{{ shortened_url.slug }}</a></p>
+    </div>
 </body>
 </html>

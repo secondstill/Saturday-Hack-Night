@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URL Shortener</title>
 </head>
-<body>
-    <form action="{% url 'yourl' %}" method="post">
-        {% csrf_token %}
-        <label for="url">Enter URL to shorten:</label><br>
-        <input type="text" id="url" name="url"><br>
-        <button type="submit">Shorten URL</button>
-    </form>
+<body style="background-color: #f4f4f4; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+    <div style="text-align: center; padding: 20px; background-color: #fff; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <h1 style="color: #333;">URL Shortener</h1>
+        <form action="{% url 'yourl' %}" method="post">
+            {% csrf_token %}
+            <label for="url" style="display: block; margin-bottom: 10px;">Enter URL to shorten:</label><br>
+            <input type="text" id="url" name="url" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+            <button type="submit" style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Shorten URL</button>
+        </form>
+    </div>
 </body>
 </html>
