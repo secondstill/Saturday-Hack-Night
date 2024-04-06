@@ -4,16 +4,15 @@
 
 
 
-# yourl - a url shortner
-Long Description about project. This project do that. This project is awesome...
+# yourl - a url shortener
+A url shortener webapp which uses Django as it's framework.
 ## Team members
 1. [Alan Subhash](https://github.com/ALAN20SIG)
 2. [Mishel Anna](https://github.com/MishelAnna)
 ## Link to product walkthrough
 [link to video](Link Here)
 ## How it Works ?
-1. Explaining the working of project
-2. Embed video of project demo
+We can input a loooooooong url (say 100000 characters in length) and get a smol url with a unique key consisting of 11 special characters. Small but a very effective project to explore django and the databases part of it is the main priority here. Mapping the original url (ogurl) with the database, creating a slug (our unique key here) and returning the short url back to the client.
 ## Libraries used
 Library Name - Version
 ## How to configure
