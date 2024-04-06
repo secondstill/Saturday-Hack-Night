@@ -19,3 +19,4 @@ Library Name - Version
 Instructions for setting up project
 ## How to Run
 run the code : python manage.py runserver
+if it doesn't work run : cd yourl , then try again
