@@ -1,7 +1,10 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
+from django.http import HttpResponse, HttpResponseRedirect, HttpResponseNotFound, JsonResponse
+from django.urls import reverse
 from .models import UrlData
 import random
 import string
+
 
 def yourl(request):
     if request.method == 'POST':
