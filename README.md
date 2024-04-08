@@ -29,6 +29,9 @@ No external libraries used. Django for the framework | HTML for the website | Py
 3. Run the following command to clone the repository:
 
 -> git clone https://github.com/secondstill/Saturday-Hack-Night 
+
 -> cd yourl
+
 -> python manage.py runserver
+
 -> hold ctrl and click on the link : http://127.0.0.1:8000
